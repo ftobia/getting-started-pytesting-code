@@ -34,3 +34,9 @@ def chunkify(iterable, chunk_size):
         return_value.append(acc)
     return return_value
 
+
+def is_listy(x):
+    from collections import Sized, Iterable, Mapping
+    return (isinstance(x, Sized) and
+            isinstance(x, Iterable) and
+            not isinstance(x, (Mapping, type(b''), type(u''))))
