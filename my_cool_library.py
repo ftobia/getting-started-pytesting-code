@@ -16,3 +16,16 @@ class Bunch(object):
     def to_dict(self):
         return dict(self.__dict__)
 
+
+def chunkify(iterable, chunk_size):
+    return_value = []
+    acc = []
+    for item in iterable:
+        acc.append(item)
+        if len(acc) == chunk_size:
+            return_value.append(acc)
+            acc = []
+    if acc:
+        return_value.append(acc)
+    return return_value
+
