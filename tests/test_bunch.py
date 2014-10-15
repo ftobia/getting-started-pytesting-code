@@ -16,6 +16,11 @@ def full_bunch(bunch):
     return bunch
 
 
+@pytest.mark.empty
+def test_empty_list(bunch):
+    assert list(bunch) == []
+
+
 def test_contains(full_bunch):
     assert 'foo' in full_bunch
 
@@ -37,6 +42,7 @@ def test_to_dict(full_bunch):
     }
 
 
+@pytest.mark.foo
 def test_to_dict_makes_a_copy(full_bunch):
     d = full_bunch.to_dict()
     d['monkey'] = 'butler'
@@ -63,6 +69,7 @@ class TestGetAndSet(object):
         assert bunch['four'] == 'four'
 
 
+@pytest.mark.foo
 class TestDelete(object):
 
     def test_del_attr(self, full_bunch):

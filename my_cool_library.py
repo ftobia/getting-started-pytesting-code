@@ -13,6 +13,9 @@ class Bunch(object):
     def __contains__(self, item):
         return item in self.__dict__
 
+    def __iter__(self):
+        return iter(self.__dict__)
+
     def to_dict(self):
         return dict(self.__dict__)
 
