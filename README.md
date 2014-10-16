@@ -9,25 +9,25 @@ Quick start
 
 1. Get the code.
 
-    $ git clone https://github.com/ftobia/getting-started-pytesting-code.git
-    $ cd getting-started-pytesting
+        $ git clone https://github.com/ftobia/getting-started-pytesting-code.git
+        $ cd getting-started-pytesting
     
 1. Make a virtualenv.
 
-    $ virtualenv env
+        $ virtualenv env
     
 1. Activate your virtualenv.
 
-    $ source env/bin/activate
-    (env)$
+        $ source env/bin/activate
+        (env)$
 
 1. Install pytest and the sample code library.
 
-    (env)$ pip install pytest
-    (env)$ pip install -e .
+        (env)$ pip install pytest
+        (env)$ pip install -e .
 
 1. Run pytest
 
-    (env)$ py.test
+        (env)$ py.test
 
 1. Play around with the code.
