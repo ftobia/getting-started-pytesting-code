@@ -5,7 +5,7 @@ Code examples for presentation on introductory unit testing in Python using the 
 
 
 Quick start
-===========
+-----------
 
 1. Get the code.
 
@@ -31,3 +31,18 @@ Quick start
         (env)$ py.test
 
 1. Play around with the code.
+
+
+Tags you can use
+----------------
+
+Jump to certain points in the code using `git checkout {name-of-tag}`.
+
+Tags:
+
+* beginning
+* bunch
+* arbitrary-markers
+* chunkify
+* install
+* is_listy
