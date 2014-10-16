@@ -18,6 +18,8 @@ class Bunch(object):
 
 
 def chunkify(iterable, chunk_size):
+    if chunk_size < 0:
+        raise ValueError('Chunk size cannot be negative')
     return_value = []
     acc = []
     for item in iterable:

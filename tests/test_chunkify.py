@@ -15,3 +15,9 @@ from my_cool_library import chunkify
 ])
 def test_chunkify(input, chunk_size, expected):
     assert chunkify(input, chunk_size) == expected
+
+
+def test_chunk_size_cannot_be_negative():
+    with pytest.raises(ValueError) as cm:
+        chunkify([1, 2, 3], -2)
+    assert str(cm.value) == 'Chunk size cannot be negative'
